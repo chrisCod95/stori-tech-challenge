@@ -1,0 +1,6 @@
+__pycache__/
+
+# Miscellaneous
+.idea
+.vscode
+.DS_Store
