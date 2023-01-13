@@ -45,7 +45,8 @@ class SummaryEmail(FormView):
             )
             for index, row in rows
         ]
-        return Transaction.objects.bulk_create(transactions)
+        Transaction.objects.bulk_create(transactions)
+        return data
 
     @staticmethod
     def _get_balance(account, form):
