@@ -1,0 +1,31 @@
+service: lambda-stori-challenge
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "sqs:SendMessage"
+        - "sqs:GetQueueUrl"
+      Resource: "arn:aws:sqs:${self:provider.region}:644244270861:StoriChallenge"
+    - Effect: 'Allow'
+      Resource: '*'
+      Action:
+        - "s3:PutBucketAcl"
+        - "s3:GetEncryptionConfiguration"
+        - "s3:PutEncryptionConfiguration"
+    - Effect: "Allow"
+      Action:
+        - "sqs:ListQueues"
+      Resource: "arn:aws:sqs:${self:provider.region}:644244270861:*"
+
+functions:
+  send_balance_email:
+    handler: src.handler.send_balance_email
+    events:
+      - sqs:
+          arn: "arn:aws:sqs:${self:provider.region}:644244270861:StoriChallenge"

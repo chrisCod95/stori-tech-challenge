@@ -26,7 +26,8 @@ class SummaryEmail(FormView):
         self.balance.csv_file = form.cleaned_data['csv_file']
         self.balance.save()
         self.transactions = self._process_csv(self.balance.csv_file.url)
-        send_balance_message(self.transactions)
+
+        send_balance_message(self.transactions, form.cleaned_data['email'], form.cleaned_data['name'])
         return super().form_valid(form)
 
     def get_success_url(self, **kwargs):
