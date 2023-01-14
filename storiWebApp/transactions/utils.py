@@ -20,7 +20,7 @@ def enqueue(message_body):
     )
 
 
-def send_balance_message(transactions):
+def send_balance_message(transactions, email, name):
     total_balance: float = 0
     debit_amount: float = 0
     credit_amount: float = 0
@@ -39,13 +39,19 @@ def send_balance_message(transactions):
             debit_amount += row['Transaction']
 
     balance_data = {
-        'total_balance': total_balance,
-        'credit_amount': credit_amount,
-        'debit_amount': debit_amount
+        'account': {
+            'email': email,
+            'name': name
+        },
+        'data': {
+            'total_balance': total_balance,
+            'credit_amount': credit_amount,
+            'debit_amount': debit_amount
+        }
     }
 
     for month in months:
-        balance_data.update({f'transactions_in_{month}': trans_per_month.count(month)})
+        balance_data['data'].update({f'transactions_in_{month}': trans_per_month.count(month)})
 
     try:
         enqueue(balance_data)
