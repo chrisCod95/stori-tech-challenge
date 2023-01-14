@@ -1,6 +1,6 @@
 __pycache__/
 
 # Miscellaneous
-.idea
-.vscode
-.DS_Store
+.idea/
+.vscode/
+.DS_Store/
