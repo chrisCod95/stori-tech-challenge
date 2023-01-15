@@ -1,9 +1,63 @@
 def build_html(data, username):
     html = f"""
-        <html>
-            <head>
-                <style>
-                    header {{
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+        <head>
+        <!--[if gte mso 9]>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="x-apple-disable-message-reformatting">
+          <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+          <title></title>
+          
+            <style type="text/css">
+              @media only screen and (min-width: 520px) {{
+              .u-row {{
+        width: 500px !important;
+              }}
+              .u-row .u-col {{
+        vertical - align: top;
+              }}
+            
+              .u-row .u-col-100 {{
+        width: 500px !important;
+              }}
+        
+        }}
+        
+        @media (max-width: 520px) {{
+          .u-row-container {{
+    max - width: 100% !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+          }}
+          .u-row .u-col {{
+    min - width: 320px !important;
+            max-width: 100% !important;
+            display: block !important;
+          }}
+          .u-row {{
+    width: 100% !important;
+          }}
+          .u-col {{
+    width: 100% !important;
+          }}
+          .u-col > div {{
+    margin: 0 auto;
+          }}
+        
+        body {{
+            margin: 0;
+          padding: 0;
+        }}}}
+        header {{
                         display: grid;
                         place-items: center;
                     }}
@@ -34,11 +88,42 @@ def build_html(data, username):
                     .social-media a {{
                         margin: 2rem;
                     }}
-                </style>
-            </head>
-            <body>
-
-                    <header>
+         </style>
+          
+          
+        
+        </head>
+        
+        <body class="clean-body u_body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #e7e7e7;color: #000000">
+          <!--[if IE]><div class="ie-container"><![endif]-->
+          <!--[if mso]><div class="mso-container"><![endif]-->
+          <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #e7e7e7;width:100%" cellpadding="0" cellspacing="0">
+          <tbody>
+          <tr style="vertical-align: top">
+            <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+            <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #e7e7e7;"><![endif]-->
+            
+        
+        <div class="u-row-container" style="padding: 0px;background-color: transparent">
+          <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
+              
+        <!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+        <div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+          <div style="height: 100%;width: 100% !important;">
+          <!--[if (!mso)&(!IE)]><!--><div style="height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+          
+        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+          <tbody>
+            <tr>
+              <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
+                
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="padding-right: 0px;padding-left: 0px;" align="center">
+              
+              <header>
                         <svg width="154" height="48" viewBox="0 0 154 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M54.9792 36.8241C54.9792 36.2536 55.1349 35.7348 55.498 35.2161C55.861 34.6974 56.276 34.4381 56.7947 34.4381C57.1578 34.4381 57.6246 34.6974 58.2471 35.2161C58.8695 35.7348 59.8032 36.2536 60.9962 36.7723C62.1893 37.291 63.5898 37.5503 65.1977 37.5503C67.3244 37.5503 68.8806 37.1872 69.8142 36.4092C70.7479 35.6311 71.2666 34.6456 71.2666 33.5044C71.2666 32.1039 70.7479 30.9628 69.6586 30.1328C68.5693 29.3029 67.2726 28.6805 65.7683 28.2136C64.2122 27.7987 62.708 27.3318 61.1518 26.8131C59.5957 26.2944 58.299 25.4126 57.2616 24.2196C56.2241 23.0266 55.6536 21.4186 55.6536 19.4475C55.6536 17.0615 56.5354 14.9866 58.2471 13.223C59.9588 11.4594 62.6042 10.5776 66.1314 10.5776C68.3618 10.5776 70.4367 10.9407 72.304 11.615C74.1714 12.2894 75.105 13.0674 75.105 13.9492C75.105 14.4679 74.8975 15.0385 74.4826 15.661C74.0676 16.2834 73.6008 16.5946 72.9783 16.5946C72.8227 16.5946 71.9928 16.2834 70.5404 15.661C69.088 15.0385 67.6357 14.7273 66.1833 14.7273C64.2122 14.7273 62.7598 15.1941 61.8262 16.1278C60.8925 17.0615 60.3738 18.0989 60.3738 19.24C60.3738 20.433 60.8925 21.3667 61.9818 22.0929C63.0192 22.7672 64.3678 23.3378 65.9239 23.7009C67.48 24.064 69.0362 24.5827 70.5404 25.1014C72.0965 25.672 73.3933 26.6056 74.4307 27.9543C75.4681 29.3029 76.0387 31.0665 76.0387 33.1932C76.0387 35.7867 75.105 37.8615 73.2377 39.3658C71.3703 40.87 68.7249 41.6481 65.4052 41.6481C62.5005 41.6481 60.0626 41.1294 57.9877 40.092C55.9648 39.0546 54.9792 37.9653 54.9792 36.8241Z" fill="#384967"/>
                             <path d="M80.1364 31.5333V3.41947C80.1364 2.90077 80.3957 2.4858 80.9663 2.12271C81.5369 1.75962 82.1074 1.604 82.7299 1.604C83.4042 1.604 84.0266 1.81149 84.5972 2.12271C85.1678 2.4858 85.4271 2.90077 85.4271 3.41947V10.8888H93.4671C93.9339 10.8888 94.297 11.0963 94.6082 11.5113C94.9195 11.9262 95.0751 12.4449 95.0751 12.9637C95.0751 13.5342 94.9195 14.0011 94.6082 14.416C94.297 14.831 93.9339 15.0385 93.4671 15.0385H85.4271V31.3777C85.4271 33.1932 85.8421 34.4899 86.6202 35.2161C87.3982 35.9423 88.7987 36.3054 90.7179 36.3054H92.689C93.4152 36.3054 93.9858 36.5129 94.4008 36.9797C94.8157 37.4466 95.0232 38.0171 95.0232 38.6914C95.0232 39.3658 94.8157 39.9363 94.4008 40.4032C93.9858 40.87 93.4152 41.1294 92.7409 41.1294H90.7698C83.6635 41.1812 80.1364 37.9653 80.1364 31.5333Z" fill="#384967"/>
@@ -59,8 +144,8 @@ def build_html(data, username):
                         <p>Here you have the balance you have asked recently: </p>
                         <br>
                         <table>
-        """
-
+              """
+    
     for key, value in data.items():
         head = ''
         head_parts = key.split('_')
@@ -74,7 +159,7 @@ def build_html(data, username):
         """.format(head=head.capitalize(), value=value)
 
     html += """
-        </table>
+                    </table>
         <br><br>
         <small>Remember to fallow us on ous social media so you are updated about new promos</small>
 
@@ -100,7 +185,35 @@ def build_html(data, username):
             </a>
         </div>
                 </div>
-            </body>
+            </td>
+          </tr>
+        </table>
+        
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+          <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+          </div>
+        </div>
+        <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+        
+        
+            <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+          </tbody>
+          </table>
+          <!--[if mso]></div><![endif]-->
+          <!--[if IE]></div><![endif]-->
+        </body>
+        
         </html>
+
     """
     return html

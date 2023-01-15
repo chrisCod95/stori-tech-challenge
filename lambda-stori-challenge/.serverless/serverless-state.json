@@ -220,7 +220,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/lambda-stori-challenge/dev/1673660205810-2023-01-14T01:36:45.810Z/lambda-stori-challenge.zip"
+                "S3Key": "serverless/lambda-stori-challenge/dev/1673859331061-2023-01-16T08:55:31.061Z/lambda-stori-challenge.zip"
               },
               "Handler": "src.handler.send_balance_email",
               "Runtime": "python3.8",
@@ -238,14 +238,14 @@
               "SendUnderscorebalanceUnderscoreemailLogGroup"
             ]
           },
-          "SendUnderscorebalanceUnderscoreemailLambdaVersionK56WFiJ3GykLvQlUGRam6hZTcv9QCZuBy3XqulESdz4": {
+          "SendUnderscorebalanceUnderscoreemailLambdaVersionNbe03T2EPQPhHcozbVOcphZ07vPRn5YvA0frLiEs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SendUnderscorebalanceUnderscoreemailLambdaFunction"
               },
-              "CodeSha256": "4INSAyEnT9ouSTTcCgO8nYh5P42JGnl69b3IPZk9m0c="
+              "CodeSha256": "GwaJXce/48V6ci+Ft0ol4yO+F9tW7YYI6bHharqYPHQ="
             }
           },
           "SendUnderscorebalanceUnderscoreemailEventSourceMappingSQSStoriChallenge": {
@@ -278,7 +278,7 @@
           "SendUnderscorebalanceUnderscoreemailLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SendUnderscorebalanceUnderscoreemailLambdaVersionK56WFiJ3GykLvQlUGRam6hZTcv9QCZuBy3XqulESdz4"
+              "Ref": "SendUnderscorebalanceUnderscoreemailLambdaVersionNbe03T2EPQPhHcozbVOcphZ07vPRn5YvA0frLiEs"
             },
             "Export": {
               "Name": "sls-lambda-stori-challenge-dev-SendUnderscorebalanceUnderscoreemailLambdaFunctionQualifiedArn"
@@ -387,7 +387,7 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "SendUnderscorebalanceUnderscoreemailLambdaVersionK56WFiJ3GykLvQlUGRam6hZTcv9QCZuBy3XqulESdz4"
+        "versionLogicalId": "SendUnderscorebalanceUnderscoreemailLambdaVersionNbe03T2EPQPhHcozbVOcphZ07vPRn5YvA0frLiEs"
       }
     },
     "configValidationMode": "warn",
@@ -407,7 +407,7 @@
     "artifact": "/Users/christiang/projects/stori-tech-challenge/lambda-stori-challenge/.serverless/lambda-stori-challenge.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/lambda-stori-challenge/dev/1673660205810-2023-01-14T01:36:45.810Z",
+    "artifactDirectoryName": "serverless/lambda-stori-challenge/dev/1673859331061-2023-01-16T08:55:31.061Z",
     "artifact": "lambda-stori-challenge.zip"
   }
 }
